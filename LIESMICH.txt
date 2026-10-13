@@ -1,0 +1,48 @@
+EAD Aufnahmeprotokoll – Web-App
+================================
+
+INHALT DIESES ORDNERS
+  index.html            Die App
+  pdf-lib.min.js        Baustein zum Erstellen der PDF (lokal, damit es offline geht)
+  manifest.webmanifest  Name und Symbol für den Startbildschirm
+  sw.js                 Offline-Funktion
+  icon-192.png / icon-512.png   App-Symbol
+
+1. AUF DEN WEBSPACE LADEN (einmalig)
+  Den ganzen Ordner "aufnahme" per FTP oder über das Kundenmenü Ihres
+  Webhosters in Ihre Website hochladen, z. B. nach
+      https://www.ead-regionosnabrueck.de/aufnahme/
+  Wichtig: Die Adresse muss mit https:// beginnen, sonst funktionieren
+  Offline-Modus und "Zum Startbildschirm hinzufügen" nicht.
+  (Alternative ohne eigenen Webspace: kostenlos über Netlify Drop,
+  https://app.netlify.com/drop – Ordner einfach hineinziehen.)
+
+2. AUF DEM ANDROID-HANDY (je Mitarbeiter einmalig)
+  - Die Adresse in Chrome öffnen.
+  - Menü (drei Punkte) > "Zum Startbildschirm hinzufügen" bzw. "App installieren".
+  - Danach startet das Protokoll wie eine App, auch ohne Internet.
+
+3. AUF EINEM WINDOWS-PC
+  - Die Adresse in Edge oder Chrome öffnen. Optional: Menü > "Apps" >
+    "Diese Website als App installieren".
+  - Zeichnen geht mit der Maus, einem Stift oder per Touchscreen.
+  - "Senden" öffnet das Windows-Teilen-Fenster (z. B. Outlook). Falls das nicht
+    angeboten wird: PDF speichern und in einer E-Mail anhängen.
+  - Für einen schnellen Test kann man index.html auch einfach doppelklicken.
+
+BEDIENUNG
+  - Alle Eingaben werden alle 5 Sekunden automatisch auf dem Gerät gespeichert.
+  - "PDF speichern" legt die Datei im Download-Ordner ab, z. B.
+    Aufnahmeprotokoll_Mueller_Osnabrueck_2026-10-13.pdf
+  - "Senden" erstellt die PDF und öffnet das Teilen-Menü (Gmail, Outlook ...).
+    Empfänger eintragen: info@ead-regionosnabrueck.de
+  - Skizzen: Über "Weitere Skizze hinzufügen" beliebig viele Skizzen anlegen,
+    jede mit eigener Bezeichnung (z. B. Heizungskeller). "Vollbild" zeigt die
+    Zeichenfläche bildschirmfüllend. Jede Skizze bekommt in der PDF eine eigene Seite.
+  - Bemerkungen: Über "Weitere Bemerkung hinzufügen" beliebig viele Bemerkungsfelder anlegen.
+  - "Neu" leert das Formular für die nächste Aufnahme.
+    Das vorherige Protokoll bleibt als Sicherung auf dem Gerät, bis erneut "Neu" gedrückt wird.
+
+HINWEIS
+  Die Daten bleiben auf dem jeweiligen Gerät, bis die PDF verschickt wird.
+  Es werden keine Daten an einen Server übertragen.
